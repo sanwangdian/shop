@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    $(function () {
+        var token = "";
+        axios.post('http://www.xiaozai.tech:1024/emall/login/',
+            {
+                username: "jet",
+                password: "123456"
+            })
+            .then(function (response) {
+                token = "Bearer " + response.data.data.token;
+                localStorage.setItem("token", token);
+                alert(token);
+                console.log(token);
+                $.ajax({
+                    type: "GET",
+                    url: "http://www.xiaozai.tech:1024/emall/products/sku/" + 2,
+                    beforeSend: function (request) {
+                        request.setRequestHeader("Authorization", localStorage.getItem("token"));
+                    },
+                    success: function (result) {
+                        console.log(result.data);
+
+                    }
+                });
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+    });
+</script>

@@ -1,0 +1,2745 @@
+<!DOCTYPE html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>京东(JD.COM)-综合网购首选-正品低价、品质保障、配送及时、轻松购物！</title>
+				
+		<style type="text/css">
+		
+					
+			body {
+				font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*\5b8b\4f53 宋体*/
+				color: #666;
+				background: #fff;				
+				-webkit-font-smoothing: antialiased;/*抗锯齿,使文字更清晰*/
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			a:hover {
+				color: #C81623;
+			}
+			
+			a {
+				color: #666;
+				text-decoration: none;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			img {
+				border: 0;
+				vertical-align: middle;
+			}
+			
+			.w {
+				width: 1210px;
+				height: 100px;
+				margin: 0 auto;
+			}
+			
+			.dorpdown {
+				position: relative;
+			}
+			
+			.dorpdown-layer {
+				display: none;
+				position: absolute;
+			}
+			
+			.hide {
+				display: none;
+			}
+			/*最上面一条的type 开始*/
+			
+			#shortcut {
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				background: #F1F1F1;
+			}
+			
+			.fl {
+				float: left;
+			}
+			
+			#shortcut .w {
+				width: 1210px;
+				height: 30px;
+				margin: 0 auto;
+				background: #F1F1F1;
+			}
+			
+			#shortcut li {
+				float: left;
+				height: 30px;
+				padding: 0 2px;
+			}
+			
+			#shortcut li.dorpdown {
+				z-index: 13;
+			}
+			
+			#shortcut #ttbar-mycity {
+				padding-left: 0;
+			}
+			
+			#shortcut li.dorpdown:hover {
+				padding: 0 1px;
+			}
+			
+			#shortcut li.dropdown {
+				position: relative;
+				padding-left: 0px;
+				z-index: 13;
+			}
+			
+			#shortcut .dt {
+				float: left;
+				padding: 0 8px;
+			}
+			
+			#shortcut #ttbar-mycity .dt {
+				padding: 0 25px 0 10px;
+			}
+			
+			.cw-icon {
+				position: relative;
+				cursor: default;
+				zoom: 1;
+			}
+			
+			#shortcut li.dorpdown:hover .dt {
+				background: #fff;
+				border: solid #ddd;
+				border-width: 0 1px;
+				cursor: default;
+			}
+			
+			#ttbar-mycity:hover .dt {
+				padding: 0 24px 0 9px;
+			}
+			
+			#shortcut .ci-right {
+				position: absolute;
+				display: block;
+				top: 12px;
+				right: 8px;
+				height: 7px;
+				overflow: hidden;
+				font: 400 15px/15px consolas;
+				color: #6A6A6A;
+				transition: transform .1s ease-in 0s;
+				-webkit-transition: -webkit-transform .1s ease-in 0s;
+			}
+			
+			#shortcut li.dorpdown:hover .ci-right {
+				transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+			}
+			
+			#shortcut .ci-right s {
+				position: relative;
+				top: -7px;
+				text-decoration: none;
+			}
+			
+			#shortcut .dorpdown-layer {
+				display: none;
+				position: absolute;
+				line-height: 24px;
+				width: 301px;
+				padding: 10px 0 10px 10px;
+				top: 30px;
+				background: #fff;
+				border: 1px solid #ddd;
+			}
+			
+			#shortcut li.dorpdown:hover .dorpdown-layer {
+				display: block;
+			}
+			
+			#shortcut #ttbar-mycity .dd-spacer {
+				left: 0;
+				width: 98px;
+			}
+			
+			#shortcut .dd-spacer {
+				position: absolute;
+				top: -7px;
+				height: 10px;
+				background: #fff;
+				overflow: hidden;
+			}
+			
+			#shortcut #ttbar-mycity .item {
+				float: left;
+				width: 60px;
+				padding: 2px 0;
+			}
+			
+			#shortcut #ttbar-mycity .item a {
+				float: left;
+				padding: 0 8px;
+			}
+			
+			a.selected {
+				background: #C81623;
+				color: #fff;
+			}
+			
+			#shortcut .item a:hover {
+				background: #F4F4F4;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			#shortcut #ttbar-login {
+				margin-right: 10px;
+			}
+			
+			#shortcut #ttbar-login .link-login {
+				font-family: "verdana,simsun";
+			}
+			
+			#shortcut .style-red {
+				color: #C81623;
+			}
+			
+			#shortcut li.spacer {
+				width: 1px;
+				height: 12px;
+				margin-top: 9px;
+				padding: 0;
+				background: #ddd;
+				overflow: hidden;
+			}
+			
+			#ttbar-myjd .dorpdown-layer {
+				width: 280px;
+			}
+			
+			#ttbar-myjd .userinfo {
+				padding: 10px 0 10px 15px;
+				overflow: hidden;
+			}
+			
+			#ttbar-myjd .u-pic {
+				float: left;
+				margin-right: 10px;
+			}
+			
+			#ttbar-myjd .u-pic img {
+				border-radius: 50%;
+				-moz-border-radius: 50%;
+				-webkit-border-radius: 50%;
+			}
+			
+			#ttbar-myjd .u-name {
+				padding: 6px 0 0;
+				font-weight: 700;
+			}
+			
+			#ttbar-myjd .otherlist {
+				width: 255px;
+				padding: 0 0 0 15px;
+				margin: 5px 0;
+				overflow: hidden;
+				margin-bottom: 10px;
+			}
+			
+			#ttbar-myjd .otherlist .fore1,
+			#ttbar-myjd .otherlist .fore2 {
+				float: left;
+				width: 126px;
+			}
+			
+			#ttbar-myjd .dd-spacer {
+				left: 0;
+				width: 82px;
+			}
+			
+			#shortcut #ttbar-apps .dt {
+				padding-left: 25px;
+				padding-right: 25px;
+			}
+			
+			#shortcut #ttbar-myjd .dt,
+			#shortcut #ttbar-atte .dt,
+			#shortcut #ttbar-serv .dt,
+			#shortcut #ttbar-navs .dt {
+				width: 49px;
+				padding-right: 25px;
+			}
+			
+			.cw-icon .i,
+			.cw-icon i {
+				display: block;
+				position: absolute;
+				overflow: hidden;
+			}
+			
+			#shortcut #ttbar-apps .dt .ci-left {
+				top: 5px;
+				left: 7px;
+				width: 15px;
+				height: 20px;
+				background: url(img/jd2015img.png) 0 0 no-repeat;
+			}
+			
+			#shortcut #ttbar-apps:hover .dt .ci-left {
+				background: url(img/jd2015img.png) 0 -25px no-repeat;
+			}
+			
+			#shortcut #ttbar-apps .dd-inner {
+				position: relative;
+				width: 250px;
+				height: 195px;
+				overflow: hidden;
+				background: url(img/top/571497daNe857f9ed.png);
+			}
+			
+			#ttbar-apps .dd-spacer {
+				left: 0;
+				height: 7px;
+				width: 98px;
+			}
+			
+			#shortcut #ttbar-atte .dd-spacer,
+			#shortcut #ttbar-serv .dd-spacer {
+				left: 0;
+				height: 7px;
+				width: 82px;
+			}
+			
+			#shortcut #ttbar-apps .dd {
+				width: 250px;
+			}
+			
+			#shortcut #ttbar-apps .dd a {
+				display: block;
+				position: absolute;
+				width: 56px;
+				height: 44px;
+				overflow: hidden;
+				text-indent: -500px;
+			}
+			
+			#shortcut #ttbar-apps .dd .link {
+				width: 100px;
+				height: 20px;
+				overflow: hidden;
+			}
+			
+			#shortcut #ttbar-apps .dd .link1,
+			#shortcut #ttbar-apps .dd .link2,
+			#shortcut #ttbar-apps .dd .link3 {
+				left: 92px;
+				top: 6px;
+				background-position: 0 -44px;
+			}
+			
+			#shortcut #ttbar-apps .dd .link3 {
+				top: 104px;
+				background-position: -1px -66px;
+			}
+			
+			#shortcut #ttbar-apps .dd .link4,
+			#shortcut #ttbar-apps .dd .link5 {
+				left: 99px;
+				top: 23px;
+				width: 136px;
+				color: #c21a21;
+				text-indent: 0;
+				cursor: default;
+			}
+			
+			#shortcut #ttbar-apps .dd .link5 {
+				top: 120px;
+			}
+			
+			#shortcut #ttbar-apps .jdapp-ios,
+			#shortcut #ttbar-apps .wyapp-ios {
+				top: 46px;
+				left: 92px;
+			}
+			
+			#shortcut #ttbar-apps .jdapp-android,
+			#shortcut #ttbar-apps .wyapp-android {
+				top: 46px;
+				left: 147px;
+			}
+			
+			#shortcut #ttbar-apps .jdapp-ipad,
+			#shortcut #ttbar-apps .wyapp-ipad {
+				width: 45px;
+				top: 46px;
+				left: 202px;
+			}
+			
+			#shortcut #ttbar-apps .wyapp-android,
+			#shortcut #ttbar-apps .wyapp-ios {
+				top: 143px;
+			}
+			
+			#shortcut #ttbar-atte .dt,
+			#shortcut #ttbar-serv .dt {
+				width: 49px;
+				padding-right: 25px;
+			}
+			
+			#shortcut #ttbar-atte .dd,
+			#shortcut #ttbar-serv .dd {
+				width: 82px;
+				padding-bottom: 8px;
+			}
+			
+			#shortcut #ttbar-atte .dd {
+				padding-left: 0;
+			}
+			
+			#shortcut #ttbar-serv .dd {
+				width: 170px;
+			}
+			
+			#shortcut #ttbar-serv .item-business,
+			#shortcut #ttbar-serv .item-client {
+				font-weight: 700;
+				padding-left: 10px;
+			}
+			
+			#shortcut #ttbar-atte .item,
+			#shortcut #ttbar-serv .item {
+				display: inline-block;
+				width: 70px;
+				padding-left: 15px;
+			}
+			
+			#shortcut #ttbar-serv .item {
+				padding-left: 10px;
+			}
+			
+			#shortcut #ttbar-serv .item-business {
+				border-top: 1px dotted #ccc;
+				padding-top: 5px;
+				margin-top: 5px;
+			}
+			
+			#shortcut #ttbar-navs .dd-spacer {
+				right: 0px;
+				height: 7px;
+				width: 82px;
+			}
+			
+			#shortcut #ttbar-navs dt {
+				font-size: 14px;
+				font-weight: 700;
+				margin-bottom: 6px;
+			}
+			
+			#shortcut #ttbar-navs .dt {
+				width: 49px;
+				padding-right: 25px;
+			}
+			
+			#shortcut #ttbar-navs .dd {
+				right: 1px;
+				width: 1210px;
+				padding: 20px 0 16px;
+			}
+			
+			#shortcut #ttbar-navs dl {
+				float: left;
+				width: 201px;
+				padding-left: 20px;
+				border-left: 1px solid #ddd;
+			}
+			
+			#shortcut #ttbar-navs dl {
+				width: 259px;
+			}
+			
+			#shortcut #ttbar-navs dl.fore1 {
+				border-left: none;
+				width: 347px;
+			}
+			
+			#shortcut #ttbar-navs .fore2 {
+				display: block;
+			}
+			
+			#shortcut #ttbar-navs .item {
+				float: left;
+				width: 100px;
+			}
+			
+			#shortcut #ttbar-navs .item {
+				width: 86px;
+			}
+			/*最上面一条的type 结束*/
+			/*搜索部分 type 开始*/
+			
+			#logo {
+				position: relative;
+				z-index: 12;
+				float: left;
+				width: 362px;
+				height: 60px;
+				padding: 20px 0;
+			}
+			
+			#logo .logo {
+				display: block;
+				width: 270px;
+				height: 60px;
+				background: url(img/logo-201305.png) no-repeat 0 0;
+				text-indent: -20000px;
+			}
+			
+			#search {
+				position: relative;
+				z-index: 11;
+				float: left;
+				width: 462px;
+				margin-top: 25px;
+			}
+			
+			#search .form {
+				width: 462px;
+				height: 36px;
+			}
+			
+			#search,
+			#search .form {
+				width: auto;
+				_width: 538px;
+			}
+			
+			#shelper {
+				overflow: hidden;
+				position: absolute;
+				top: 36px;
+				left: 0;
+				width: 379px;
+				border: 1px solid #CCC;
+				background: #fff;
+			}
+			
+			#shelper {
+				width: 455px;
+			}
+			
+			#search .text {
+				float: left;
+				width: 446px;
+				height: 24px;
+				line-height: 24px;
+				color: #666;
+				padding: 4px;
+				margin-bottom: 4px;
+				border-width: 2px 0 2px 2px;
+				border-color: #B61D1D;
+				border-style: solid;
+				outline: 0;
+				font-size: 14px;
+				font-family: "microsoft yahei";
+			}
+			
+			#search .button {
+				float: left;
+				width: 82px;
+				height: 36px;
+				background: #B61D1D;
+				border: none;
+				line-height: 1;
+				color: #fff;
+				font-family: "Microsoft YaHei";
+				font-size: 16px;
+				cursor: pointer;
+			}
+			
+			#settleup {
+				float: right;
+				z-index: 11;
+				height: 36px;
+				margin-top: 25px;
+				margin-right: 65px;
+			}
+			
+			#settleup .cw-icon {
+				width: 75px;
+				height: 34px;
+				border: 1px solid #DFDFDF;
+				padding: 0 28px 0 36px;
+				background: #F9F9F9;
+				text-align: center;
+				line-height: 34px;
+			}
+			
+			#settleup:hover .cw-icon,
+			#settleup:hover .dorpdown-layer {
+				background: #fff;
+				border: 1px solid #ddd;
+				box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+			}
+			
+			#settleup .ci-left {
+				top: 9px;
+				left: 18px;
+				width: 18px;
+				height: 16px;
+				background: url(img/jd2015img.png) 0 -58px no-repeat;
+				_background: url(img/jd2015img.png) 0 -91px no-repeat;
+			}
+			
+			#settleup .ci-right {
+				top: 11px;
+				right: 10px;
+				width: 7px;
+				height: 13px;
+				overflow: hidden;
+				font: 400 13px/13px simsun;
+				color: #999;
+			}
+			
+			#settleup .ci-count {
+				position: absolute;
+				top: -4px;
+				left: 104px;
+				display: inline-block;
+				padding: 1px 2px;
+				font-size: 12px;
+				line-height: 12px;
+				color: #fff;
+				background-color: #c81623;
+				border-radius: 7px 7px 7px 0;
+				min-width: 12px;
+				text-align: center;
+			}
+			
+			#settleup:hover .spacer {
+				position: absolute;
+				right: 0;
+				top: -7px;
+				width: 139px;
+				height: 12px;
+				background: #fff;
+			}
+			
+			#settleup:hover .cw-icon,
+			#settleup:hover .dorpdown-layer {
+				background: #fff;
+				border: 1px solid #ddd;
+				box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+			}
+			
+			#settleup:hover .dorpdown-layer {
+				display: block;
+				right: 0;
+				_right: -1px;
+				width: 308px;
+			}
+			
+			#settleup-content {
+				position: relative;
+				z-index: 2;
+				width: 100%;
+				background: #fff;
+			}
+			
+			#settleup .prompt {
+				padding: 10px 15px;
+			}
+			
+			#settleup-content .loading {
+				display: block;
+				height: 50px;
+				background: url(img/loading.gif) no-repeat center center;
+			}
+			
+			#settleup .nogoods {
+				padding-left: 30px;
+				height: 49px;
+				line-height: 49px;
+				overflow: hidden;
+				color: #999;
+			}
+			
+			#settleup .nogoods b {
+				float: left;
+				width: 56px;
+				height: 49px;
+				background-image: url(img/settleup-nogoods.png);
+			}
+			
+			#hotwords {
+				float: left;
+				width: 462px;
+				height: 20px;
+				line-height: 20px;
+				overflow: hidden;
+			}
+			
+			#hotwords a {
+				float: left;
+				white-space: nowrap;
+				margin-right: 10px;
+			}
+			
+			.style-red {
+				color: #C81623;
+			}
+			/*搜索部分 type 结束*/
+			/*导航栏 所有商品开始*/
+			
+			#nav {
+				height: 44px;
+				border-bottom: 2px solid #B1191A;
+				_overflow: hidden
+			}
+			
+			#nav .w {
+				position: relative;
+				z-index: 9;
+				height: 44px
+			}
+			
+			#nav .w .w-spacer {
+				display: none
+			}
+			
+			#nav .w-spacer {
+				position: absolute;
+				top: -1px;
+				z-index: 1;
+				width: 100%;
+				height: 44px;
+				border-top: 1px solid #DDD;
+				border-bottom: 2px solid #B1191A
+			}
+			
+			#categorys {
+				float: left;
+				position: relative;
+				z-index: 10;
+				width: 210px;
+				height: 44px;
+				overflow: visible;
+				background: #B1191A
+			}
+			
+			#categorys .dt a {
+				display: block;
+				width: 190px;
+				height: 44px;
+				padding: 0 10px;
+				background: #B1191A;
+				font: 400 15px/44px "microsoft yahei";
+				color: #fff;
+				text-decoration: none
+			}
+			
+			#categorys .dt s {
+				position: relative;
+				top: -9px;
+				text-decoration: none;
+			}
+			
+			#categorys .dt .ci-right {
+				top: 20px;
+				right: 7px;
+				height: 7px;
+				overflow: hidden;
+				font: 700 20px/16px simsun;
+				color: #fff;
+				transition: transform .1s ease-in 0s;
+				-webkit-transition: -webkit-transform .1s ease-in 0s;
+				display: block;
+				position: absolute;
+			}
+			
+			#categorys .dd {
+				height: 466px;
+				background: #c81623;
+				margin-top: 2px;
+			}
+			
+			#categorys .dd-inner .item {
+				border-left: 1px solid #b61d1d;
+				position: relative;
+				z-index: 1;
+				height: 31px;
+				color: #fff;
+			}
+			
+			#categorys .dd-inner .item a {
+				color: #fff;
+			}
+			
+			#categorys .dd-inner h3 {
+				position: absolute;
+				z-index: 2;
+				height: 31px;
+				padding: 0 10px;
+				line-height: 31px;
+				font-family: "microsoft yahei";
+				font-size: 14px;
+				font-weight: 400;
+			}
+			
+			#categorys .dd-inner i {
+				position: absolute;
+				z-index: 1;
+				top: 9px;
+				right: 14px;
+				width: 4px;
+				height: 14px;
+				font: 400 9px/14px consolas;
+			}
+			
+			#categorys .dd-inner .hover {
+				background: #f7f7f7;
+				color: #B61D1D;
+			}
+			
+			#categorys .dd-inner .hover a {
+				color: #B61D1D;
+			}
+			
+			#categorys .dd-inner .hover i {
+				top: 0;
+				left: 205px;
+				width: 14px;
+				height: 31px;
+				background: #f7f7f7;
+				overflow: hidden;
+				line-height: 200px;
+			}
+			
+			#categorys .dorpdown-layer {
+				display: none;
+				position: absolute;
+				left: 209px;
+				top: 45px;
+				width: 779px;
+				background: #f7f7f7;
+				border: 1px solid #b61d1d;
+				overflow: hidden;
+			}
+			
+			#categorys .dd:hover .dorpdown-layer {
+				display: block;
+			}
+			
+			#categorys .item-sub {
+				display: none;
+				zoom: 1;
+				overflow: hidden;
+			}
+			
+			#categorys .item-sub:hover {
+				display: block;
+			}
+			
+			#categorys .item-sub:after {
+				content: ".";
+				display: block;
+				height: 0;
+				clear: both;
+			}
+			
+			#categorys .item-channels {
+				float: left;
+				display: inline;
+				width: 570px;
+				height: 24px;
+				padding: 20px 0 0 20px;
+				background: #f7f7f7;
+				overflow: hidden;
+			}
+			
+			#categorys .item-channels a {
+				float: left;
+				display: inline;
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				padding: 0 0 0 8px;
+				margin-right: 10px;
+				line-height: 24px;
+				background: #7C7171;
+				color: #fff;
+				white-space: nowrap
+			}
+			
+			#categorys .item-channels a:hover {
+				background: #C81623
+			}
+			
+			#categorys .item-channels a:hover i {
+				background: #B1191A
+			}
+			
+			#categorys .item-channels i {
+				display: inline-block;
+				*zoom: 1;
+				_display: inline;
+				margin-left: 8px;
+				width: 23px;
+				height: 24px;
+				font: 400 9px/24px consolas;
+				background: #5c5251;
+				text-align: center;
+				cursor: pointer
+			}
+			
+			#categorys .item-channels .line {
+				border-left: 1px solid #dbdbdb;
+				display: inline;
+				float: left;
+				height: 24px;
+				margin-right: 7px;
+				width: 1px;
+				overflow: hidden
+			}
+			
+			#categorys .item-channels .img-link {
+				background: 0 0;
+				line-height: normal;
+				padding: 0
+			}
+			
+			#categorys .item-channels .img-link:hover {
+				background: 0 0
+			}
+			
+			#categorys .item-channels .style-red {
+				background: #c81623
+			}
+			
+			#categorys .item-channels .style-red i {
+				background: #b1191a
+			}
+			
+			#categorys .item-channels .style-red:hover {
+				background: #961019
+			}
+			
+			#categorys .item-channels .style-red:hover i {
+				background: #851313
+			}
+			
+			#categorys .subitems {
+				float: left;
+				width: 570px;
+				padding: 6px 0 1006px 20px;
+				margin-bottom: -1000px;
+				background: #f7f7f7;
+				min-height: 409px;
+				_height: 409px;
+				_overflow: visible
+			}
+			
+			#categorys .subitems dl {
+				width: 100%;
+				overflow: hidden;
+				line-height: 2em
+			}
+			
+			#categorys .subitems dl.fore1 dd {
+				border-top: none
+			}
+			
+			#categorys .subitems dt {
+				position: relative;
+				float: left;
+				width: 54px;
+				padding: 8px 30px 0 0;
+				text-align: right;
+				font-weight: 700
+			}
+			
+			#categorys .subitems dt i {
+				position: absolute;
+				top: 13px;
+				right: 18px;
+				width: 4px;
+				height: 14px;
+				font: 400 9px/14px consolas
+			}
+			
+			#categorys .subitems dd {
+				float: left;
+				width: 480px;
+				padding: 6px 0;
+				border-top: 1px solid #eee
+			}
+			
+			#categorys .subitems dd a {
+				float: left;
+				padding: 0 8px;
+				margin: 4px 0;
+				line-height: 16px;
+				height: 16px;
+				border-left: 1px solid #e0e0e0;
+				white-space: nowrap
+			}
+			
+			#categorys .subitems .style-red {
+				color: #c81623
+			}
+			
+			#categorys .subitems .style-red-border {
+				float: left;
+				margin: 4px 8px 4px 0;
+				height: 16px;
+				background: #f6f0f0;
+				overflow: hidden
+			}
+			
+			#categorys .subitems .style-red-border a {
+				font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+				color: #c81623;
+				line-height: 12px;
+				line-height: 14px\9;
+				line-height: 14px\0;
+				line-height: 12px\9\0;
+				height: 12px;
+				padding: 1px;
+				margin: 0;
+				border: 1px dotted #db7078;
+				border-left: none;
+				border-right: none;
+				display: inline-block
+			}
+			
+			#categorys .subitems .style-red-border .left-b,
+			#categorys .subitems .style-red-border .right-b {
+				float: left;
+				background: url(//img10.360buyimg.com/uba/jfs/t2986/155/1039328667/119/6d2a472a/57722598N82f09586.png) no-repeat 0 0;
+				width: 5px;
+				height: 16px
+			}
+			
+			#categorys .subitems .style-red-border .right-b {
+				background-position: -5px 0
+			}
+			
+			#categorys .item-brands {
+				float: right;
+				display: inline;
+				width: 168px;
+				overflow: hidden;
+				margin: 19px 20px 10px 0
+			}
+			
+			#categorys .item-brands a {
+				float: left;
+				display: inline;
+				margin: 1px 0 0 1px
+			}
+			
+			#categorys .item-promotions {
+				float: right;
+				display: inline;
+				width: 168px;
+				margin-right: 20px
+			}
+			
+			#categorys .item-promotions a {
+				display: block;
+				margin-bottom: 1px
+			}
+			
+			#nav .hover .dt .ci-right {
+				transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				_top: 17px
+			}
+			
+			#navitems {
+				float: left;
+				position: relative;
+				z-index: 2
+			}
+			
+			#navitems .spacer,
+			#navitems a,
+			#navitems li,
+			#navitems ul {
+				float: left
+			}
+			
+			#navitems .spacer {
+				display: none
+			}
+			
+			#navitems a {
+				height: 44px;
+				padding: 0 20px;
+				text-align: center;
+				text-decoration: none;
+				font: 400 15px/44px "microsoft yahei";
+				color: #333
+			}
+			
+			#navitems a:hover {
+				color: #C81623
+			}
+			
+			#navitems .spacer {
+				width: 1px;
+				height: 24px;
+				margin: 10px 0 0;
+				background: #DDD;
+				overflow: hidden
+			}
+			
+			#treasure {
+				float: right
+			}
+			
+			#categorys .item-channels {
+				width: 790px
+			}
+			
+			#categorys .dorpdown-layer {
+				width: 999px
+			}
+			
+			#categorys .subitems {
+				width: 790px
+			}
+			
+			#categorys .subitems dd {
+				width: 620px
+			}
+			
+			#categorys .subitems-main1,
+			#categorys .subitems-main2 {
+				float: left;
+				width: 365px;
+				padding-right: 10px;
+				margin-right: 10px;
+				border-right: 1px solid #eee;
+				margin-top: 8px
+			}
+			
+			#categorys .subitems-main1 dd,
+			#categorys .subitems-main2 dd {
+				width: 275px
+			}
+			
+			#categorys .subitems-main1 .fore1,
+			#categorys .subitems-main1 .fore8,
+			#categorys .subitems-main2 .fore1,
+			#categorys .subitems-main2 .fore8 {
+				margin-top: -5px
+			}
+			
+			#categorys .subitems-main1 .fore1 dd,
+			#categorys .subitems-main1 .fore8 dd,
+			#categorys .subitems-main2 .fore1 dd,
+			#categorys .subitems-main2 .fore8 dd {
+				border-top: 0
+			}
+			
+			#categorys .subitems-main2 {
+				border-right: 0
+			}
+			
+			#navitems li a {
+				font-size: 16px
+			}
+			/*导航栏结束*/
+			/*幻灯片广告 开始*/
+			
+			#focus {
+				margin: 0 auto;
+				width: 1210px;
+				position: relative;
+			}
+			
+			#focus .carousel {
+				margin: 12px 250px 0 220px;
+				width: 730px;
+				height: 466px;
+			}
+			
+			[role="button"] {
+				cursor: pointer;
+			}
+			
+			#focus .carousel-control {
+				z-index: 4;
+				position: absolute;
+				bottom: 12px;
+				left: 0;
+				width: 15%;
+				height: 454px;
+				font-size: 20px;
+				color: #fff;
+				text-align: center;
+				text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+				background-color: rgba(0, 0, 0, 0);
+				filter: alpha(opacity=50);
+				opacity: .5;
+			}
+			
+			#focus .carousel-control.left {
+				left: 220px;
+				background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+				background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+				background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+				background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+				filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+				background-repeat: repeat-x;
+			}
+			
+			#focus .carousel-control.right {
+				right: 260px;
+				left: auto;
+				background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+				background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+				background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+				background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+				filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+				background-repeat: repeat-x;
+			}
+			
+			#focus .carousel-control:hover,
+			#focus .carousel-control:focus {
+				color: #fff;
+				text-decoration: none;
+				filter: alpha(opacity=90);
+				outline: 0;
+				opacity: .9;
+			}
+			
+			#focus .carousel-control .glyphicon {
+				position: absolute;
+				width: 30px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 30px;
+				top: 50%;
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				display: inline-block;
+				background-color: #BBBBBB
+			}
+			
+			#focus .carousel-control .glyphicon-chevron-left {
+				left: 0;
+			}
+			
+			#focus .carousel-control .glyphicon-chevron-right {
+				right: 0;
+			}
+			
+			#focus .carousel-indicators {
+				position: absolute;
+				bottom: 20px;
+				left: 50%;
+				z-index: 4;
+				width: 60%;
+				padding-left: 0;
+				margin-left: -30%;
+				text-align: center;
+				list-style: none;
+			}
+			
+			.carousel-indicators li {
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				margin: 0 2px;
+				background: #3e3e3e;
+				border-radius: 50%;
+				text-align: center;
+				color: #fff;
+				overflow: hidden;
+				cursor: pointer;
+			}
+			
+			.carousel-indicators .active {
+				background: #b61b1f;
+				color: #fff;
+			}
+			
+			.carousel-inner {
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			.carousel-inner> .item> img,
+			.carousel-inner> .item> a> img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				line-height: 1;
+			}
+			
+			.carousel-inner> .item {
+				position: relative;
+				display: none;
+				-webkit-transition: .6s ease-in-out left;
+				-o-transition: .6s ease-in-out left;
+				transition: .6s ease-in-out left;
+
+			}
+			
+			@media all and (transform-3d),
+			(-webkit-transform-3d) {
+				.carousel-inner> .item {
+					-webkit-transition: -webkit-transform .6s ease-in-out;
+					-o-transition: -o-transform .6s ease-in-out;
+					transition: transform .6s ease-in-out;
+					-webkit-backface-visibility: hidden;
+					backface-visibility: hidden;
+					-webkit-perspective: 1000px;
+					perspective: 1000px;
+				}
+				.carousel-inner> .item.next,
+				.carousel-inner> .item.active.right {
+					left: 0;
+					-webkit-transform: translate3d(100%, 0, 0);
+					transform: translate3d(100%, 0, 0);
+				}
+				.carousel-inner> .item.prev,
+				.carousel-inner> .item.active.left {
+					left: 0;
+					-webkit-transform: translate3d(-100%, 0, 0);
+					transform: translate3d(-100%, 0, 0);
+				}
+				.carousel-inner> .item.next.left,
+				.carousel-inner> .item.prev.right,
+				.carousel-inner> .item.active {
+					left: 0;
+					-webkit-transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
+				}
+			}
+			
+			.carousel-inner> .active,
+			.carousel-inner> .next,
+			.carousel-inner> .prev {
+				display: block;
+			}
+			
+			.carousel-inner> .active {
+				left: 0;
+			}
+			
+			.carousel-inner> .next,
+			.carousel-inner> .prev {
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+			
+			.carousel-inner> .next {
+				left: 100%;
+			}
+			
+			.carousel-inner> .prev {
+				left: -100%;
+			}
+			
+			.carousel-inner> .next.left,
+			.carousel-inner> .prev.right {
+				left: 0;
+			}
+			
+			.carousel-inner> .active.left {
+				left: -100%;
+			}
+			
+			.carousel-inner> .active.right {
+				left: 100%;
+			}
+			/*幻灯片广告 结束*/
+			/*幻灯片右侧部分 开始*/
+			
+			#focus-extra {
+				position: relative;
+				height: 0;
+				z-index: 8;
+				top: -478px;
+			}
+			
+			#lifeserv,
+			#news {
+				position: absolute;
+				right: 0;
+				padding: 0;
+				background: rgba(255, 255, 255, .85);
+				filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#BBFFFFFF, endColorstr=#BBFFFFFF)
+			}
+			
+			#news .mt {
+				padding: 0 15px;
+				border-bottom: 1px dotted #E8E8E7;
+				height: 43px;
+				line-height: 43px
+			}
+			
+			#lifeserv h2,
+			#news h2 {
+				font-size: 16px
+			}
+			
+			#focus-extra .mt .extra {
+				float: right;
+				font-family: consolas;
+			}
+			
+			#focus-extra h2 {
+				float: left;
+			}
+			
+			.carousel-inner .item img {
+				width: 730px;
+				height: 454px;
+			}
+			
+			h2,
+			h3 {
+				font-family: "microsoft yahei";
+				font-weight: 400;
+			}
+			
+			#news {
+				float: right;
+				height: 200px;
+				width: 248px;
+				overflow: hidden;
+				top: 12px;
+				border: solid 1px #e4e4e4;
+				border-bottom: 0
+			}
+			
+			#news .mc {
+				height: 140px;
+				padding: 8px 0 0 15px
+			}
+			
+			#news li {
+				width: 210px;
+				height: 27px;
+				line-height: 27px;
+				overflow: hidden
+			}
+			
+			#news li span {
+				font-weight: 700;
+				margin-right: 5px
+			}
+			
+			#lifeserv {
+				top: 213px;
+				border: solid 1px #e4e4e4;
+				border-top: dashed 1px #e4e4e4;
+				overflow: hidden;
+				width: 248px
+			}
+			
+			#lifeserv .mc {
+				height: 208px;
+				position: relative
+			}
+			
+			#lifeserv ul {
+				position: relative;
+				width: 260px;
+				height: 209px;
+				overflow: hidden
+			}
+			
+			#lifeserv li {
+				_position: relative;
+				float: left;
+				display: inline;
+				width: 62px;
+				height: 70px;
+				border-right: 1px solid #E8E8E7;
+				border-bottom: 1px solid #E8E8E7;
+				overflow: hidden;
+				cursor: pointer
+			}
+			
+			#lifeserv li a {
+				display: block;
+				width: 62px;
+				height: 28px;
+				padding-top: 41px;
+				line-height: 28px;
+				text-align: center;
+				text-decoration: none;
+				cursor: pointer
+			}
+			
+			#lifeserv li a:hover span {
+				color: #C81623
+			}
+			
+			#lifeserv .ci-left {
+				top: 13px;
+				left: 18px;
+				width: 25px;
+				height: 25px;
+				background: url(img/lifeserv/57620a6fN77b2b8af.png) no-repeat 0 0;
+			}
+			
+			#lifeserv .fore2 .ci-left {
+				background-position: 0 -25px;
+			}
+			
+			#lifeserv .fore3 .ci-left {
+				background-position: 0 -50px;
+			}
+			
+			#lifeserv .fore4 .ci-left {
+				background-position: 0 -75px;
+			}
+			
+			#lifeserv .fore5 .ci-left {
+				background-position: 0 -100px;
+			}
+			
+			#lifeserv .fore6 .ci-left {
+				background-position: 0 -125px;
+			}
+			
+			#lifeserv .fore7 .ci-left {
+				background-position: 0 -150px;
+			}
+			
+			#lifeserv .fore8 .ci-left {
+				background-position: 0 -175px;
+			}
+			
+			#lifeserv .fore9 .ci-left {
+				background-position: 0 -200px;
+			}
+			
+			#lifeserv .fore10 .ci-left {
+				background-position: 0 -225px;
+			}
+			
+			#lifeserv .fore11 .ci-left {
+				background-position: 0 -255px;
+			}
+			
+			#lifeserv .fore12 .ci-left {
+				background-position: 0 -275px;
+			}
+			
+			#news .mc li {
+				line-height: 24px;
+				height: 24px
+			}
+			
+			.w #news {
+				height: 163px
+			}
+			
+			.w #news .mc {
+				height: 120px;
+				padding-top: 5px
+			}
+			
+			.w #news .mt {
+				height: 32px;
+				line-height: 32px
+			}
+			
+			.w #lifeserv {
+				top: 176px;
+				border-top: solid 1px #e4e4e4
+			}
+			
+			#right-pic {
+				position: absolute;
+				right: 0;
+				padding: 0;
+				background: rgba(255, 255, 255, .85);
+				overflow: hidden;
+				width: 250px;
+				height: 75px;
+				top: 391px;
+				filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#BBFFFFFF, endColorstr=#BBFFFFFF)
+			}
+			/*幻灯片右侧部分 结束*/
+			/*今日推荐开始*/
+			
+			#today {
+				margin: 0 auto 20px auto;
+				position: relative;
+				height: 184px;
+				width: 1210px;
+			}
+			/*时钟开始*/
+			
+			#jd-clock {
+				float: left;
+				width: 210px;
+				height: 151px;
+				background: url(img/todays/homebg.png) 0 -136px no-repeat;
+			}
+			/*时钟结束*/
+			/*slider开始*/
+			
+			#today .slider {
+				float: left;
+				width: 1000px;
+				height: 164px;
+			}
+			
+			#today .slider .carousel-inner .item img {
+				float: left;
+				margin-right: 1px;
+				width: 249px;
+				height: 164px;
+			}
+			
+			#today .slider .carousel-inner .item .noMargin {
+				width: 250px;
+				margin-right: 0;
+			}
+			
+			#today .slider .carousel-inner .carousel-control {
+				display: none;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				height: 40px;
+				width: 20px;
+				background-color: white;
+				opacity: 0.8;
+			}
+			
+			#today .slider .carousel-inner:hover .carousel-control {
+				display: block;
+			}
+			
+			#today .slider .carousel-inner .carousel-control.left {
+				left: 0;
+			}
+			
+			#today .slider .carousel-inner .carousel-control.right {
+				right: 0;
+			}
+			
+			#today .slider .carousel-inner .carousel-control .glyphicon {
+				width: inherit;
+				height: inherit;
+				font-size: 28px;
+				text-align: center;
+				line-height: 40px;
+				color: gainsboro;
+			}
+			/*slider结束*/
+			/*今日推荐结束*/
+			/*最底部 开始*/
+			
+			#footer {
+				padding-bottom: 30px;
+				text-align: center;
+			}
+			
+			#footer .links a {
+				margin: 0 10px;
+			}
+			
+			#footer .copyright {
+				margin: 10px 0;
+			}
+
+			[v-cloak]{
+				display: none;
+			}
+			/*最底部 结束*/
+		</style>
+
+	</head>
+
+	<body>
+		<!--最顶上的一条开始-->
+		<div id="shortcut">
+			<div class="w">
+				<ul class="fl">
+					<li class="dorpdown" id="ttbar-mycity">
+						<div class="dt cw-icon area-text-wrap">
+							<i class="ci-right"><s>◇</s></i> 送至：
+							<span class="area-text" title="北京">北京</span>
+						</div>
+
+						<div class="dd dorpdown-layer">
+							<div class="dd-spacer"></div>
+							<div class="area-content-wrap">
+								<div class="area-content">
+									<div class="area-content-list">
+										<div class="item">
+											<a href="#" class="selected">北京</a>
+										</div>
+										<div class="item">
+											<a href="#">上海</a>
+										</div>
+										<div class="item">
+											<a href="#">天津</a>
+										</div>
+										<div class="item">
+											<a href="#">重庆</a>
+										</div>
+										<div class="item">
+											<a href="#">河北</a>
+										</div>
+										<div class="item">
+											<a href="#">山西</a>
+										</div>
+										<div class="item">
+											<a href="#">河南</a>
+										</div>
+										<div class="item">
+											<a href="#">辽宁</a>
+										</div>
+										<div class="item">
+											<a href="#">吉林</a>
+										</div>
+										<div class="item">
+											<a href="#">黑龙江</a>
+										</div>
+										<div class="item">
+											<a href="#">内蒙古</a>
+										</div>
+										<div class="item">
+											<a href="#">江苏</a>
+										</div>
+										<div class="item">
+											<a href="#">山东</a>
+										</div>
+										<div class="item">
+											<a href="#">安徽</a>
+										</div>
+										<div class="item">
+											<a href="#">浙江</a>
+										</div>
+										<div class="item">
+											<a href="#">福建</a>
+										</div>
+										<div class="item">
+											<a href="#">湖北</a>
+										</div>
+										<div class="item">
+											<a href="#">湖南</a>
+										</div>
+										<div class="item">
+											<a href="#">广东</a>
+										</div>
+										<div class="item">
+											<a href="#">广西</a>
+										</div>
+										<div class="item">
+											<a href="#">江西</a>
+										</div>
+										<div class="item">
+											<a href="#">四川</a>
+										</div>
+										<div class="item">
+											<a href="#">海南</a>
+										</div>
+										<div class="item">
+											<a href="#">贵州</a>
+										</div>
+										<div class="item">
+											<a href="#">云南</a>
+										</div>
+										<div class="item">
+											<a href="#">西藏</a>
+										</div>
+										<div class="item">
+											<a href="#">陕西</a>
+										</div>
+										<div class="item">
+											<a href="#">甘肃</a>
+										</div>
+										<div class="item">
+											<a href="#">青海</a>
+										</div>
+										<div class="item">
+											<a href="#">宁夏</a>
+										</div>
+										<div class="item">
+											<a href="#">新疆</a>
+										</div>
+										<div class="item">
+											<a href="#">台湾</a>
+										</div>
+										<div class="item">
+											<a href="#">香港</a>
+										</div>
+										<div class="item">
+											<a href="#">澳门</a>
+										</div>
+										<div class="item">
+											<a href="#">钓鱼岛</a>
+										</div>
+										<div class="item">
+											<a href="#">海外</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="fr">
+					<li class="fore1" id="ttbar-login">
+						<a href="./login.html" class="link-login" v-cloak>{{loginMsg}}</a>&nbsp;&nbsp;
+						<a href="./register.html" class="link-regist style-red">免费注册</a>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore2">
+						<div class="dt">
+							<a target="_blank" href="">我的订单</a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore3 dorpdown" id="ttbar-myjd">
+						<div class="dt cw-icon">
+							<i class="ci-right"><s>◇</s></i>
+							<a target="_blank" href="">我的京东</a>
+						</div>
+						<div class="dd dorpdown-layer">
+							<div class="dd-spacer"></div>
+							<div class="userinfo">
+								<div class="u-pic">
+									<a href=""><img src="img/top/no-img_mid_.jpg" width="60" height="60"></a>
+								</div>
+								<div class="u-name u-login">
+									<a href="" class="link-login">{{loginMsg}}</a>
+								</div>
+								<div class="u-extra">
+									<a href="" target="_blank">优惠券<span id="num-ticket"></span></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<a href="" target="_blank">消息<span id="num-tip"></span></a>
+								</div>
+							</div>
+							<div class="otherlist">
+								<div class="fore1">
+									<div class="item">
+										<a href="" clstag="" target="_blank">待处理订单<span id="num-unfinishedorder"></span></a>
+									</div>
+									<div class="item">
+										<a href="" clstag="" target="_blank">咨询回复<span id="num-consultation"></span></a>
+									</div>
+									<div class="item">
+										<a href="" clstag="" target="_blank">降价商品<span id="num-reduction"></span></a>
+									</div>
+									<div class="item">
+										<a href="" clstag="" target="_blank">返修退换货</a>
+									</div>
+								</div>
+								<div class="fore2">
+									<div class="item">
+										<a href="" clstag="" target="_blank">我的关注</a>
+									</div>
+									<div class="item">
+										<a href="" clstag="" target="_blank">我的京豆</a>
+									</div>
+									<div class="item">
+										<a href="" clstag="" target="_blank">我的理财</a>
+									</div>
+									<div class="item baitiao">
+										<a href="" target="_blank">京东白条</a>
+									</div>
+								</div>
+							</div>
+							<div class="viewlist" style="display:none;">
+								<div class="smt">
+									<h4>我的足迹</h4>
+									<span class="extra">
+										<a target="_blank" href="">更多&nbsp;&gt;</a>
+									</span>
+								</div>
+								<div class="smc"></div>
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore4">
+						<div class="dt">
+							<a target="_blank" href="">京东会员</a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore5">
+						<div class="dt">
+							<a target="_blank" href="">企业采购</a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore6 dorpdown" id="ttbar-apps">
+						<div class="dt cw-icon">
+							<i class="ci-left"></i>
+							<i class="ci-right"><s>◇</s></i>
+							<a target="_blank" href="">手机京东</a>
+						</div>
+						<div class="dd dorpdown-layer">
+							<div class="dd-spacer"></div>
+							<div class="dd-inner" id="ttbar-apps-main">
+								<a href="" class="link link1" target="_blank">京东客户端</a>
+								<a href="" class="link link3" target="_blank">京东钱包客户端</a>
+								<a href="" class="link link4">新人专享188元大礼包</a>
+								<a href="" class="link link5">扫一扫封顶立减999元</a>
+								<a href="" class="applink jdapp-ios" target="_blank">京东客户端ios版</a>
+								<a href="" class="applink jdapp-android" target="_blank">京东客户端android版</a>
+								<a href="" class="applink jdapp-ipad" target="_blank">京东客户端ipad版</a>
+								<a href="" class="applink wyapp-ios" target="_blank">京东钱包客户端ios版</a>
+								<a href="" class="applink wyapp-android" target="_blank">京东钱包客户端android版</a>
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore7 dorpdown" id="ttbar-atte">
+						<div class="dt cw-icon">
+							<i class="ci-right"><s>◇</s></i>关注京东
+						</div>
+						<div class="dd dorpdown-layer"></div>
+						<div class="dd dorpdown-layer">
+							<div class="dd-spacer"></div>
+							<div class="dd-inner" id="ttbar-atte-main">
+								<img src="img/top/54c84f72Ncc1a02a2.jpg" alt="关注京东">
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore8 dorpdown" id="ttbar-serv">
+						<div class="dt cw-icon">
+							<i class="ci-right"><s>◇</s></i>客户服务
+						</div>
+						<div class="dd dorpdown-layer">
+							<div class="dd-spacer"></div>
+							<div class="item-client">客户</div>
+							<div class="item">
+								<a href="" target="_blank" true="">帮助中心</a>
+							</div>
+							<div class="item">
+								<a href="" target="_blank" true="">售后服务</a>
+							</div>
+							<div class="item">
+								<a href="" target="_blank" true="">在线客服</a>
+							</div>
+							<div class="item">
+								<a href="" target="_blank" true="">意见建议</a>
+							</div>
+							<div class="item">
+								<a href="" target="_blank" true="">电话客服</a>
+							</div>
+							<div class="item">
+								<a href="" target="_blank" true="">客服邮箱</a>
+							</div>
+							<div class="item-business">商户</div>
+							<div class="item">
+								<a href="" target="_blank" true="">京东商学院</a>
+							</div>
+							<div class="item">
+								<a href="" target="_blank" true="">商家入驻</a>
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore9 dorpdown" id="ttbar-navs" clstag="h|keycount|2015|01j" data-load="1">
+						<div class="dt cw-icon">
+							<i class="ci-right"><s>◇</s></i>网站导航
+						</div>
+						<div class="dd dorpdown-layer">
+							<div class="dd-spacer"></div>
+							<dl class="fore1"> <dt>特色主题</dt>
+								<dd>
+									<div class="item">
+										<a href="//pinpaijie.jd.com/" target="_blank">品牌街</a>
+									</div>
+									<div class="item">
+										<a href="//hao.jd.com/" target="_blank">好物100</a>
+									</div>
+									<div class="item">
+										<a href="//xinpin.jd.com/presale.html " target="_blank">京东预售</a>
+									</div>
+									<div class="item">
+										<a href="//zan.jd.com" target="_blank">尖er货</a>
+									</div>
+									<div class="item">
+										<a href="//xinpin.jd.com/new.html" target="_blank">京东首发</a>
+									</div>
+									<div class="item">
+										<a href="//tuan.jd.com/homevirtual-beijing.html" target="_blank">今日团购</a>
+									</div>
+									<div class="item">
+										<a href="//youhuiquan.jd.com/" target="_blank">优惠券</a>
+									</div>
+									<div class="item">
+										<a href="//red.jd.com/" target="_blank">闪购</a>
+									</div>
+									<div class="item">
+										<a href="//vip.jd.com/" target="_blank">京东会员</a>
+									</div>
+									<div class="item">
+										<a href="//miao.jd.com/" target="_blank">秒杀</a>
+									</div>
+									<div class="item">
+										<a href="//ding.jd.com/" target="_blank">定期送</a>
+									</div>
+									<div class="item">
+										<a href="//diy.jd.com/" target="_blank">装机大师</a>
+									</div>
+									<div class="item">
+										<a href="//hao.jd.com/hwy.html" target="_blank">新奇特</a>
+									</div>
+									<div class="item">
+										<a href="//try.jd.com/" target="_blank">京东试用</a>
+									</div>
+									<div class="item">
+										<a href="//gift.jd.com/" target="_blank">礼品购</a>
+									</div>
+									<div class="item">
+										<a href="//smarthome.jd.com/" target="_blank">智能馆</a>
+									</div>
+									<div class="item">
+										<a href="//sale.jd.com/act/tp6KfYH7wb.html" target="_blank">玩bigger</a>
+									</div>
+									<div class="item">
+										<a href="//sale.jd.com/act/rKhJit1fWVDR.html" target="_blank">大牌免息</a>
+									</div>
+									<div class="item">
+										<a href="//sale.jd.com/act/3je8ZTCxNl6SusId.html " target="_blank">北京老字号</a>
+									</div>
+								</dd>
+							</dl>
+							<dl class="fore2"> <dt>行业频道</dt>
+								<dd>
+									<div class="item">
+										<a href="//channel.jd.com/fashion.html" target="_blank">服装城</a>
+									</div>
+									<div class="item">
+										<a href="//channel.jd.com/electronic.html" target="_blank">家用电器</a>
+									</div>
+									<div class="item">
+										<a href="//channel.jd.com/computer.html" target="_blank">电脑办公</a>
+									</div>
+									<div class="item">
+										<a href="//shouji.jd.com/" target="_blank">手机</a>
+									</div>
+									<div class="item">
+										<a href="//channel.jd.com/beauty.html" target="_blank">美妆馆</a>
+									</div>
+									<div class="item">
+										<a href="//channel.jd.com/chaoshi.html" target="_blank">食品</a>
+									</div>
+									<div class="item">
+										<a href="//channel.jd.com/digital.html" target="_blank">数码</a>
+									</div>
+									<div class="item">
+										<a href="//baby.jd.com/" target="_blank">母婴</a>
+									</div>
+									<div class="item">
+										<a href="//channel.jd.com/jiazhuang.html" target="_blank">家装城</a>
+									</div>
+									<div class="item">
+										<a href="//channel.jd.com/sports.html" target="_blank">运动户外</a>
+									</div>
+									<div class="item">
+										<a href="http://car.jd.com" target="_blank">整车</a>
+									</div>
+									<div class="item">
+										<a href="//book.jd.com/" target="_blank">图书</a>
+									</div>
+									<div class="item">
+										<a href="//nong.jd.com/" target="_blank">农资频道</a>
+									</div>
+									<div class="item">
+										<a href="//smart.jd.com/" target="_blank">京东智能</a>
+									</div>
+								</dd>
+							</dl>
+							<dl class="fore3"> <dt>生活服务</dt>
+								<dd>
+									<div class="item">
+										<a href="//z.jd.com/" target="_blank">京东众筹</a>
+									</div>
+									<div class="item">
+										<a href="//baitiao.jd.com/activity/third" target="_blank">白条</a>
+									</div>
+									<div class="item">
+										<a href="https://www.jdpay.com/" target="_blank">京东钱包</a>
+									</div>
+									<div class="item">
+										<a href="//trade.jr.jd.com/myxjk/jrbincome.action" target="_blank">京东小金库</a>
+									</div>
+									<div class="item">
+										<a href="//licai.jd.com/" target="_blank">理财</a>
+									</div>
+									<div class="item">
+										<a href="//chongzhi.jd.com/" target="_blank">话费</a>
+									</div>
+									<div class="item">
+										<a href="//trip.jd.com/" target="_blank">旅行</a>
+									</div>
+									<div class="item">
+										<a href="//caipiao.jd.com/" target="_blank">彩票</a>
+									</div>
+									<div class="item">
+										<a href="//game.jd.com/" target="_blank">游戏</a>
+									</div>
+									<div class="item">
+										<a href="//jipiao.jd.com/" target="_blank">机票酒店</a>
+									</div>
+									<div class="item">
+										<a href="//movie.jd.com/" target="_blank">电影票</a>
+									</div>
+									<div class="item">
+										<a href="//jiaofei.jd.com/" target="_blank">水电煤</a>
+									</div>
+									<div class="item">
+										<a href="//daojia.jd.com/html/welcome.html" target="_blank">京东到家</a>
+									</div>
+									<div class="item">
+										<a href="//smartcloud.jd.com/app" target="_blank">京东微联</a>
+									</div>
+									<div class="item">
+										<a href="//try-smart.jd.com/" target="_blank">京东众测</a>
+									</div>
+								</dd>
+							</dl>
+							<dl class="fore4"> <dt>更多精选</dt>
+								<dd>
+									<div class="item">
+										<a href="http://group.jd.com" target="_blank">京东社区</a>
+									</div>
+									<div class="item">
+										<a href="//mobile.jd.com/index.do" target="_blank">京东通信</a>
+									</div>
+									<div class="item">
+										<a href="//read.jd.com/" target="_blank">在线读书</a>
+									</div>
+									<div class="item">
+										<a href="//o.jd.com/market/index.action" target="_blank">京东E卡</a>
+									</div>
+									<div class="item">
+										<a href="http://group.jd.com/site/20000121/20000032.htm" target="_blank">智能社区</a>
+									</div>
+									<div class="item">
+										<a href="http://group.jd.com/index/20000001.htm" target="_blank">游戏社区</a>
+									</div>
+									<div class="item">
+										<a href="//you.jd.com/index.html?entrance=jd_home" target="_blank">京友邦</a>
+									</div>
+									<div class="item">
+										<a href="//sale.jd.com/act/wQTpIm7GnXE.html" target="_blank">卖家入驻</a>
+									</div>
+									<div class="item">
+										<a href="//b.jd.com/" target="_blank">企业采购</a>
+									</div>
+									<div class="item">
+										<a href="//fw.jd.com/" target="_blank">服务市场</a>
+									</div>
+									<div class="item">
+										<a href="//zhaomu.jd.com/XCDLzm.html" target="_blank">乡村招募</a>
+									</div>
+									<div class="item">
+										<a href="//zhaomu.jd.com/intro.html" target="_blank">校园加盟</a>
+									</div>
+									<div class="item">
+										<a href="//channel.jd.com/office.html" target="_blank">办公生活馆</a>
+									</div>
+									<div class="item">
+										<a href="//ipr.jd.com/" target="_blank">知识产权维权</a>
+									</div>
+									<div class="item">
+										<a href="//en.jd.com/" target="_blank">English Site</a>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<!--最顶上的一条结束-->
+
+		<!--搜索框部分 开始-->
+		<div class="w">
+			<div id="logo">
+				<a href="" class="logo">京东</a>
+			</div>
+			<div id="search">
+				<ul id="shelper" class="hide" style="display: none;"></ul>
+				<div class="form">
+					<input type="text" autocomplete="off" id="key" @keyup.enter="findByVal" v-model="findVal" class="text">
+					<button @click="findByVal" class="button cw-icon"><i></i>搜索</button>
+<!--					<button @click="search" class="button cw-icon"><i></i>搜索</button>-->
+<!--					<input type="submit" class="button cw-icon" value="搜索">-->
+				</div>
+			</div>
+			<div id="settleup" class="dorpdown">
+				<div class="cw-icon">
+					<i class="ci-left"></i>
+					<i class="ci-right">&gt;</i><i class="ci-count" id="shopping-amount">0</i>
+					<a target="_blank" href="//cart.jd.com/cart.action">我的购物车</a>
+				</div>
+				<div class="dorpdown-layer">
+					<div class="spacer"></div>
+					<div id="settleup-content" style="display: none;"><span class="loading"></span></div>
+					<div class="prompt">
+						<div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div>
+					</div>
+				</div>
+			</div>
+			<div id="hotwords">
+				<a href="" target="_blank" class="style-red">9.9团购</a>
+				<a href="" target="_blank">领免息券</a>
+				<a href="" target="_blank">3件7折</a>
+				<a href="" target="_blank">手机暑促</a>
+				<a href="" target="_blank">100元红包</a>
+				<a href="" target="_blank">运动裤</a>
+				<a href="" target="_blank">七夕礼物</a>
+				<a href="" target="_blank">0元试用</a>
+				<a href="" target="_blank">卫裤男</a>
+			</div>
+			<span class="clr"></span>
+		</div>
+		<!--搜索框部分 结束-->
+
+		<!--导航栏 所有商品分类 开始-->
+		<div id="nav">
+			<div class="w">
+				<div class="w-spacer"></div>
+
+				<div id="categorys" class="dorpdown">
+					<div class="dt">
+						<a target="_blank" href="">全部商品分类</a>
+					</div>
+					<div class="dd" v-cloak >
+
+						<div class="dd-inner" id="categorys-dd-inner" >
+<!--							<div id="cart">-->
+							<div class="item fore1" style="height: 17px" data-index="index" v-for="(product,index) in products">
+								<h3><a  target="_blank" href="#" @click.prevent="changPage(index)">{{product.name}}</a></h3>
+								<i>&gt;</i>
+							</div>
+
+						</div>
+
+						<div class="dorpdown-layer" id="category-dorpdown-layer">
+
+<!--							<div class="item-sub" id="category-item-2" data-id="2" v-for="(p2,index) in products[1].children">-->
+<!--							<div class="item-sub" id="category-item-2" data-id="i1" v-for="(i1,index) in products.length">-->
+							<div class="item-sub" id="category-item-1" data-id="1" v-for="(p1,index) in products">
+								<div class="item-brands">
+									<div class="brands-inner">
+										<a href="" class="img-link" target="_blank"><img src="img/category/54d9ef34N7cc61f4c.jpg" width="83" height="35"></a>
+										<a href="" class="img-link" target="_blank"><img src="img/category/5534f4d6N6cf59e34.jpg" width="83" height="35"></a>
+										<a href="" class="img-link" target="_blank"><img src="img/category/55a5b5baN89a65ec2.jpg" width="83" height="35"></a>
+										<a href="" class="img-link" target="_blank"><img src="img/category/55b1d930Nf0bfccbb.jpg" width="83" height="35"></a>
+										<a href="" class="img-link" target="_blank"><img src="img/category/562f4971Na5379aba.jpg" width="83" height="35"></a>
+										<a href="" class="img-link" target="_blank"><img src="img/category/564a8df2Nbab8fdab.jpg" width="83" height="35"></a>
+										<a href="" class="img-link" target="_blank"><img src="img/category/56a6d27cNbb9b4a77.jpg" width="83" height="35"></a>
+										<a href="" class="img-link" target="_blank"><img src="img/category/56a72d4fN4d1b42fe.jpg" width="83" height="35"></a>
+									</div>
+								</div>
+								<div class="item-channels">
+									<div class="channels">
+										<a href="" target="_blank">玩3C<i>&gt;</i></a>
+										<a href="" target="_blank">手机频道<i>&gt;</i></a>
+										<a href="" target="_blank">网上营业厅<i>&gt;</i></a>
+										<a href="" target="_blank">配件城<i>&gt;</i></a>
+										<a href="" target="_blank">影像Club<i>&gt;</i></a>
+										<a href="" target="_blank">以旧换新<i>&gt;</i></a>
+									</div>
+								</div>
+								<div class="subitems">
+<!--									<dl class="fore1" v-for="(p2,i2) in products[index].children">-->
+									<dl class="fore1" v-for="(p2,i2) in p1.children">
+										<dt>
+											<a href="" target="_blank">{{p2.name}}
+												<i>&gt;</i>
+											</a>
+										</dt>
+										<dd>
+<!--											<a href="" target="_blank" v-for="(p3,i3) in products[index].children[i2].children">{{p3.name}}</a>-->
+											<a href="" target="_blank" v-for="(p3,i3) in p2.children">{{p3.name}}</a>
+										</dd>
+									</dl>
+
+								</div>
+								<div class="item-promotions">
+									<a href="" class="img-link" target="_blank"><img src="img/category/577f019cN4ea29161.jpg" width="168" height="134"></a>
+									<a href="" class="img-link" target="_blank"><img src="img/category/577e364eN86c8f187.jpg" width="168" height="134"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--index_ok-->
+				<div id="navitems">
+
+					<ul id="navitems-group1">
+						<li class="fore1">
+							<a target="_blank" href="">服装城</a>
+						</li>
+						<li class="fore2">
+							<a target="_blank" href="">美妆馆</a>
+						</li>
+						<li class="fore3">
+							<a target="_blank" href="">京东超市</a>
+						</li>
+						<li class="fore4">
+							<a target="_blank" href="">生鲜</a>
+						</li>
+					</ul>
+					<div class="spacer"></div>
+					<ul id="navitems-group2">
+						<li class="fore1">
+							<a target="_blank" href="">全球购</a>
+						</li>
+						<li class="fore2">
+							<a target="_blank" href="">闪购</a>
+						</li>
+						<li class="fore3">
+							<a target="_blank" href="">团购</a>
+						</li>
+						<li class="fore4">
+							<a target="_blank" href="">拍卖</a>
+						</li>
+						<li class="fore5">
+							<a target="_blank" href="">金融</a>
+						</li>
+					</ul>
+				</div>
+				<!--index_ok-->
+
+				<div id="treasure"></div>
+				<span class="clr"></span>
+			</div>
+		</div>
+
+		<!--导航栏 所有商品分类 结束-->
+
+		<!--幻灯片广告 开始-->
+		<div id="focus">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!--标识符:告诉我们页码-->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
+					<li data-target="#carousel-example-generic" data-slide-to="1">2</li>
+					<li data-target="#carousel-example-generic" data-slide-to="2">3</li>
+					<li data-target="#carousel-example-generic" data-slide-to="3">4</li>
+					<li data-target="#carousel-example-generic" data-slide-to="4">5</li>
+					<li data-target="#carousel-example-generic" data-slide-to="5">6</li>
+				</ol>
+
+				<!-- 幻灯片内容 -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/slider-panel/56444bdeNc7876085.jpg">
+
+					</div>
+
+					<div class="item">
+						<img src="img/slider-panel/577dcd6fN496de0fe.jpg">
+
+					</div>
+
+					<div class="item">
+						<img src="img/slider-panel/577df78cN881c3185.jpg">
+
+					</div>
+					<div class="item">
+						<img src="img/slider-panel/577f0c40N8b775482.jpg">
+
+					</div>
+					<div class="item">
+						<img src="img/slider-panel/577f4041N1340519c.jpg">
+
+					</div>
+					<div class="item">
+						<img src="img/slider-panel/577f674cNbb0cd782.jpg">
+
+					</div>
+				</div>
+
+				<!-- 控制器: 负责上一页/下一页 -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><</span>
+
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">></span>
+
+				</a>
+
+			</div>
+		</div>
+
+		<!--幻灯片广告 结束-->
+
+		<!--幻灯片右侧部分 开始-->
+		<div class="w" id="focus-extra">
+
+			<div id="news" class="m">
+				<div class="mt">
+					<h2>京东快报</h2>
+					<div class="extra">
+						<a target="_blank" href="//headline.jd.com/" clstag="h|keycount|2015|09a">更多 &gt;</a>
+					</div>
+				</div>
+				<div class="mc">
+					<ul>
+
+						<li>
+							<a target="_blank" href=""><span>[特惠]</span>全球好货清仓特卖，低至1折</a>
+						</li>
+						<li>
+							<a target="_blank" href=""><span>[公告]</span>水灾救援物资网友捐赠通道开启</a>
+						</li>
+						<li>
+							<a target="_blank" href=""><span>[特惠]</span>奢品清仓，低至99元</a>
+						</li>
+						<li>
+							<a target="_blank" href=""><span>[公告]</span>京东美食地图·地方生鲜馆上线</a>
+						</li>
+						<li>
+							<a target="_blank" href=""><span>[特惠]</span>欧德堡新品上市</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--index_ok-->
+			<div id="lifeserv" class="m">
+
+				<div class="mc">
+					<ul>
+						<li class="fore1">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>话费</span>
+							</a>
+						</li>
+						<li class="fore2">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>机票</span>
+							</a>
+						</li>
+						<li class="fore3">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>电影票</span>
+							</a>
+						</li>
+						<li class="fore4">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>游戏</span>
+							</a>
+						</li>
+						<li class="fore5">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>彩票</span>
+							</a>
+						</li>
+						<li class="fore6">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>加油卡</span>
+							</a>
+						</li>
+						<li class="fore7">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>酒店</span>
+							</a>
+						</li>
+						<li class="fore8">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>火车票</span>
+							</a>
+						</li>
+						<li class="fore11">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>众筹</span>
+							</a>
+						</li>
+						<li class="fore9">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>理财</span>
+							</a>
+						</li>
+						<li class="fore12">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>礼品卡</span>
+							</a>
+						</li>
+						<li class="fore10">
+							<a class="cw-icon" target="_blank" href="">
+								<i class="ci-left"></i><span>白条</span>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<!--右下广告位 开始-->
+			<div id="right-pic" class="m">
+				<div class="mc">
+					<a href="" target="_blank"><img src="./img/right-ad-pic/577.jpg" alt="" width="250" height="75"></a>
+				</div>
+			</div>
+			<!--右下广告位 结束-->
+		</div>
+		<!--幻灯片右侧部分 结束-->
+
+		<!--今日推荐开始-->
+
+		<div id="today">
+			<div id="jd-clock">
+				<div class="clock-s"> </div>
+				<div class="clock-m"></div>
+				<div class="clock-h"></div>
+			</div>
+			<div class="slider">
+				<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+
+					<!-- sliser 内容 -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/todays/57760935Nf55313c6.jpg">
+							<img src="img/todays/577e1ae3N3afec857.jpg" />
+							<img src="img/todays/577f62c7Ncbde5828.jpg" />
+							<img src="img/todays/5782f337Nb3c40b2f.jpg" />
+						</div>
+
+						<div class="item">
+							<img src="img/todays/578895a6N3b5219f5.jpg">
+							<img src="img/todays/57846834N9176cc8d.jpg" />
+							<img src="img/todays/57873443Nc0a537cf.jpg" />
+							<img src="img/todays/57884702Nf96c0eb6.jpg" />
+
+						</div>
+
+						<div class="item">
+							<img src="img/todays/578895eeN00a8b473.jpg">
+							<img src="img/todays/5788a6d7N1421789a.jpg" />
+							<img src="img/todays/5789cc80N9397b0f9.png" />
+							<img src="img/todays/578d9a07Ne821362b.jpg" />
+
+						</div>
+
+						<!-- 控制器: 负责上一页/下一页 -->
+						<a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><</span>
+
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">></span>
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--今日推荐结束-->
+
+		<!--最底部copyright 开始-->
+
+		<div id="footer">
+			<div class="links">
+				<a rel="nofollow"="_blank" href="http://www.jd.com/intro/about.aspx">
+					关于我们
+				</a>
+				|target
+				<a rel="nofollow" target="_blank" href="http://www.jd.com/contact/">
+					联系我们
+				</a>
+				|
+				<a rel="nofollow" target="_blank" href="http://zhaopin.jd.com/">
+					人才招聘
+				</a>
+				|
+				<a rel="nofollow" target="_blank" href="http://www.jd.com/contact/joinin.aspx">
+					商家入驻
+				</a>
+				|
+				<a rel="nofollow" target="_blank" href="http://www.jd.com/intro/service.aspx">
+					广告服务
+				</a>
+				|
+				<a rel="nofollow" target="_blank" href="http://app.jd.com/">
+					手机京东
+				</a>
+				|
+				<a target="_blank" href="http://club.jd.com/links.aspx">
+					友情链接
+				</a>
+				|
+				<a target="_blank" href="http://media.jd.com/">
+					销售联盟
+				</a>
+				|
+				<a href="//club.jd.com/" target="_blank">
+					京东社区
+				</a>
+				|
+				<a href="//gongyi.jd.com" target="_blank">
+					京东公益
+				</a>
+				|
+				<a target="_blank" href="http://en.jd.com/" clstag="pageclick|keycount|20150112ABD|9">English Site</a>
+			</div>
+			<div class="copyright">
+				Copyright©2004-2016&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+			</div>
+		</div>
+
+		<!--最底部 结束-->
+		<script src="js/jquery-2.1.4.js"></script>
+		<script src="js/bootstrap.js"></script>		
+		<script type="text/javascript">
+			(function() {
+				var $ddi = $("#categorys-dd-inner"),
+					$ddid = $ddi.find("div"),
+					$ddr = $("#category-dorpdown-layer"),
+					$ddri = $ddr.find(".item-sub"),
+					index = 0,
+					$ddrr = $ddr.find("#category-item-" + index),
+					id = 0;
+
+				//左侧栏 hover合成事件
+				$ddid.hover(function() {
+						$ddrr.css("display", "none"),
+							$ddrr.removeClass("hover"),
+							$(this).addClass("hover"),
+							index = $(this).data("index"),
+							$ddrr = $ddr.find("#category-item-" + index),
+							$ddrr.css("display", "block"),
+							$ddrr.addClass("hover");
+					},
+					function() {
+						index = $(this).data("index");
+						$(this).removeClass("hover");
+					}
+				);
+
+				//右侧弹出菜单 hover合成事件
+				$ddri.hover(function() {
+						id = $(this).data("id"),
+							$ddi.find(".fore" + id).addClass("hover");
+					},
+					function() {
+						$ddi.find(".hover").removeClass("hover");
+					}
+				);
+				
+
+			})();
+		</script>
+		
+		<script type="text/javascript">
+			$(function() {
+				var $areaText = $(".area-text"),
+					$areaContentList = $(".area-content-list"),
+					$area = $areaContentList.find("a");
+
+				$area.mouseup(function() {
+					$areaText.text($(this).text());
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/vue.js"></script>
+<script type="text/javascript">
+
+
+	$(function(){
+
+		let carts = new Vue({
+			el:"#categorys",
+			data:{
+				products:[],
+				pc:[]
+			},
+			methods:{
+				changPage(index){
+					// alert(this.products[index].name);
+					if(this.products[index].name.indexOf("手机") != -1){
+						window.location.href = "./list.html?key=手机";
+					}
+				}
+			},
+			mounted(){
+				
+				$.ajax({
+					type:"GET",
+					url:"http://www.xiaozai.tech:2048/emall/categories",
+					// beforeSend:function(request){
+					// 	request.setRequestHeader("Authorization",token);
+					// },
+					success:function(result){
+						console.log(result.data);
+						carts.products = result.data;
+						
+					}
+				});
+			}
+		});
+
+		let vm2 = new Vue({
+			el:"#shortcut",
+			data:{
+				loginMsg:""
+			},
+			computed: {
+				isLogin(){
+					let id = sessionStorage.getItem("id");
+					if(id != null){
+						
+						this.loginMsg = "欢迎,"+sessionStorage.getItem("username");
+					}else{
+						this.loginMsg = "你好，请登录"
+					}
+				}
+			},
+			mounted(){
+				
+				
+				this.isLogin;
+			}
+		});
+		let vm1 = new Vue({
+			el:"#search",
+			data: {
+				findVal:""
+			},
+			methods: {
+				findByVal(){
+					if (this.findVal != ""){
+						this.findVal = this.findVal.trim(" ");
+						window.location.href = "./list.html?key="+this.findVal;
+					}
+				}
+			}
+		});
+	});
+</script>
